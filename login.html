@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="styleslogin.css">
+</head>
+<body>
+  <header>
+    <h1>Login</h1>
+  </header>
+  <main>
+    <section id="login-form">
+      <h2>Login to Expense Tracker</h2>
+      <form id="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <button id="login-btn">Login</button>
+      </form>
+      <p id="error-message"></p>
+      <p>Don't have an account? <a href="register.html" id="create-account-link">Create one here</a></p>
+    </section>
+  </main>
+  <script src="scriptlogin.js"></script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+/* stylesregister.css */
+
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    animation: background-animate 10s infinite;
+  }
+  
+  @keyframes background-animate {
+    0% {
+      background-color: #f9f9f9;
+    }
+    50% {
+      background-color: #fff;
+    }
+    100% {
+      background-color: #f9f9f9;
+    }
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    animation: header-animate 5s infinite;
+  }
+  
+  @keyframes header-animate {
+    0% {
+      background-color: #333;
+    }
+    50% {
+      background-color: #444;
+    }
+    100% {
+      background-color: #333;
+    }
+  }
+  
+  main {
+    max-width: 400px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: main-animate 5s infinite;
+  }
+  
+  @keyframes main-animate {
+    0% {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  }
+  
+  h1, h2 {
+    margin-bottom: 0.5em;
+    color: #333;
+    animation: text-animate 5s infinite;
+  }
+  
+  @keyframes text-animate {
+    0% {
+      color: #333;
+    }
+    50% {
+      color: #444;
+    }
+    100% {
+      color: #333;
+    }
+  }
+  
+  /* Form Styles */
+  
+  #register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label {
+    margin-bottom: 0.5em;
+    color: #333;
+    animation: label-animate 5s infinite;
+  }
+  
+  @keyframes label-animate {
+    0% {
+      color: #333;
+    }
+    50% {
+      color: #444;
+    }
+    100% {
+      color: #333;
+    }
+  }
+  
+  input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    animation: input-animate 5s infinite;
+  }
+  
+  @keyframes input-animate {
+    0% {
+      border-color: #ccc;
+    }
+    50% {
+      border-color: #aaa;
+    }
+    100% {
+      border-color: #ccc;
+    }
+  }
+  
+  input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    animation: input-focus-animate 5s infinite;
+  }
+  
+  @keyframes input-focus-animate {
+    0% {
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+  }
+  
+  button[type="button"], button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: button-animate 5s infinite;
+  }
+  
+  @keyframes button-animate {
+    0% {
+      background-color: #333;
+    }
+    50% {
+      background-color: #444;
+    }
+    100% {
+      background-color: #333;
+    }
+  }
+  
+  button[type="button"]:hover, button[type="submit"]:hover {
+    background-color: #444;
+  }
+  
+  #error-message {
+    color: #f00;
+    margin-top: 1em;
+    animation: error-animate 5s infinite;
+  }
+  
+  @keyframes error-animate {
+    0% {
+      color: #f00;
+    }
+    50% {
+      color: #ff0000;
+    }
+    100% {
+      color: #f00;
+    }
+  }
+  
+  /* Responsive Design */
+  
+  @media (max-width: 768px) {
+    main {
+      margin: 1em;
+    }
+  }
